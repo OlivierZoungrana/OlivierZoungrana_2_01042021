@@ -1,262 +1,580 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+   box-sizing:border-box ;
 }
 
-header{
-    padding: 30px;;
-    display: flex;
-    width: 100%;
-    height: 100px;
-    justify-content: space-between;
-    align-items: center;
-   
-}
-
-.nav ul li{
-
-    display: inline-block;
-}
-.nav ul li a{
-    color:#0065FC;
-    text-decoration: none;
-    margin: 30px;
-    padding: 0 0 0 0;
-    font-family: 'Raleway', sans-serif;
-}
-
-.nav ul li a:hover{
-
-    color:black;
-
-}
-
-.logo{
-
-    width: 100px;
-}
-
-h2,h3,h4,h5,p, a{
-    font-family: 'Raleway', sans-serif;
-
-}
-
-h3{
-    font-size: 25px;
-}
-
-
-
-
-
-#recherche{
-
-    width: 100%;
-    height: 300px;
-    padding: 30px;
-
+@media screen and (min-width: 1281px){
+    header{
+        padding: 30px;;
+        display: flex;
+        width: 100%;
+        height: 100px;
+        justify-content: space-between;
+        align-items: center;
+       
+    }
     
+    .nav ul li{
+    
+        display: inline-block;
+    }
+    .nav ul li a{
+        color:#0065FC;
+        text-decoration: none;
+        margin: 30px;
+        padding: 0 0 0 0;
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    .nav ul li a:hover{
+    
+        color:black;
+    
+    }
+    
+    .logo{
+    
+        width: 100px;
+    }
+    
+    h2,h3,h4,h5,p, a{
+        font-family: 'Raleway', sans-serif;
+    
+    }
+    
+    h3{
+        font-size: 25px;
+    }
+
+    #recherche{
+    
+        width: 100%;
+        height: 300px;
+        padding: 30px;
+    
+        
+    }
+    
+    .search{
+        width: 10px;
+        height: 30px;
+        background-color: #0065FC;
+        padding:  6px;
+        text-decoration: none;
+        color: white;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    
+    .bouton{
+        height: 30px;
+    }
+    
+    #heberge{
+        display: flex;
+        padding: 30px;
+        width: 100%;
+        justify-content: space-around;
+    }
+    
+    .images{
+        position: relative;
+        width: 95%;
+        height: 150px;
+        border-radius: 10px;
+        left: 5px;
+        top: 2px;
+        transition: .3s ease-in-out; 
+    }
+    
+    .photo{
+        position: absolute;
+        margin: 2px;
+        width: 200px;
+        height: 200px;
+        
+      
+    }
+    
+    .popu{
+        width: 200px;
+        height: 180px; 
+        border-radius: 20px;
+      
+    }
+    
+    .hotel{
+        position: relative;
+        width:300px; 
+        height:250px;
+        background-color: white;
+        border-radius: 20px;
+        top: 10px;
+        margin-bottom: 15px;
+        box-shadow: inset gray;
+        box-shadow: 8px 8px 10px 0 rgba(0,0,0,0.5);
+        -webkit-transition: all 0.2s;
+         -moz-transition: all 0.2s;
+         -ms-transition: all 0.2s;
+         -o-transition: all 0.2s;
+         transition: all 0.2s;
+        
+       
+    }
+    
+    .hotel:hover{
+        transform:scale(1.1);
+    
+    }
+    
+    .hotel1{
+        position: relative;
+        float: left;
+        width: 100%;
+        background-color: white;
+        height: 200px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        box-shadow: 8px 8px 10px 0 rgba(0,0,0,0.5);
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s;
+    }
+    
+    .hotel1:hover{
+        transform:scale(1.1);
+    
+    }
+    
+    .photo{
+        position: absolute;
+        left: 5%;
+        top: 2%;
+       
+    }
+    
+    .coment{
+        position:absolute;
+        left: 50%;
+        top: 50px;
+    }
+    
+    
+    .fa-star.blue{
+    
+        color: #0065FC;
+    }
+    
+    #aside{
+    
+        background-color:#F2F2F2 ;
+        width: 30%;
+        border-radius: 10px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+       
+    }
+    
+    #plus{
+        display: flex;
+        width: 65%;
+        background-color:#F2F2F2;
+        height: 800px;
+        padding: 30px;
+        border-radius: 10px;
+        justify-content:space-around;
+        flex-wrap: wrap;
+    }
+    
+    .activite{
+        width: 100%;
+        height: 600px;
+        padding: 50px;
+    }
+    
+    #act{
+        width: 100%;
+        height:100%;
+        background-color: #F2F2F2;
+        border-radius: 10px;
+        padding: 30px;
+        display: flex;
+        justify-content: space-around;
+       
+        
+    }
+    
+    .imag{
+        width: 20%;
+        margin-right: 10px;
+       
+    }
+    
+    
+    
+    .image1{
+        width: 100%;
+        height: 100%;
+       border-top-left-radius: 20px;
+       border-top-right-radius: 20px;
+    }
+    
+    .image2{
+        width: 100%;
+        height: 50%;
+        border-radius: 20px;
+    }
+    
+    
+    
+    footer{
+        display: flex;
+        position: relative;
+        background-color:#F2F2F2;
+        width: 100%;
+        height: 150px;
+        top: 50px;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+    
+    .foot{
+        position: absolute;
+    }
+    
+    footer a{
+        text-decoration: none;
+        color: black;
+    
+    }
+
+
 }
 
-.search{
-    width: 10px;
-    height: 30px;
+
+@media screen and (min-width:414px) and (max-width:736px){
+
+    header{
+        position: relative;
+        padding: 30px;;
+        display: flex;
+        width: 100%;
+        height: 100px;
+        justify-content:flex-end;
+        align-items: center;
+       
+    }
+
+    .nav1{
+     position: absolute;
+     left: 10px;
+    }
+
+    .nav2{
+        position: absolute;
+        left: 200px;
+    }
+
+    .nav3{
+        position: absolute;
+        left: 200px;
+        top: 20px;
+    }
+
+    .navigation{
+        position: absolute;
+        top: 70px;
+    }
+
+    .navigation::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
     background-color: #0065FC;
-    padding:  6px;
-    text-decoration: none;
-    color: white;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
+    margin-top: 3px;
+    transition: all .7s ease;
+    }
 
-.bouton{
-    height: 30px;
-}
-
-#heberge{
-    display: flex;
-    padding: 30px;
-    width: 100%;
-    justify-content: space-around;
-}
-
-.images{
-    position: relative;
-    width: 95%;
-    height: 150px;
-    border-radius: 10px;
-    left: 5px;
-    top: 2px;
-    transition: .3s ease-in-out; 
-}
-
-.photo{
-    position: absolute;
-    margin: 2px;
-    width: 200px;
-    height: 200px;
+    .navigation:hover{
+        text-decoration: underline;
+    }
+    .nav ul li{
     
+        display: inline-block;
+    }
+    .nav ul li a{
+        color:#0065FC;
+        text-decoration: none;
+        margin: 20px;
+        padding: 0 0 0 0;
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    .nav ul li a:hover{
+    
+        color:black;
+    
+    }
+    
+    .logo{
+        position: absolute;
+        width: 100px;
+        left: 10px;
+        top: 25px;
+
+    }
+
+    h2,h3,h4,h5,p, a{
+        font-family: 'Raleway', sans-serif;
+    
+    }
   
-}
-
-.popu{
-    width: 200px;
-    height: 180px; 
-    border-radius: 20px;
-  
-}
-
-
-
-
-
-.hotel{
-    position: relative;
-    width:300px; 
-    height:250px;
-    background-color: white;
-    border-radius: 20px;
-    top: 10px;
-    margin-bottom: 15px;
-    box-shadow: inset gray;
-    box-shadow: 8px 8px 10px 0 rgba(0,0,0,0.5);
-    -webkit-transition: all 0.2s;
-     -moz-transition: all 0.2s;
-     -ms-transition: all 0.2s;
-     -o-transition: all 0.2s;
-     transition: all 0.2s;
     
-   
-}
+    h3{
+        font-size: 22px;
+    }
 
-.hotel:hover{
-    transform:scale(1.1);
-
-}
-
-.hotel1{
-    position: relative;
-    float: left;
-    width: 100%;
-    background-color: white;
-    height: 200px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    box-shadow: 8px 8px 10px 0 rgba(0,0,0,0.5);
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;
-}
-
-.hotel1:hover{
-    transform:scale(1.1);
-
-}
-
-.photo{
-    position: absolute;
-    left: 5%;
-    top: 2%;
-   
-}
-
-.coment{
-    position:absolute;
-    left: 50%;
-    top: 50px;
-}
-
-
-.fa-star.blue{
-
-    color: #0065FC;
-}
-
-#aside{
-
-    background-color:#F2F2F2 ;
-    width: 30%;
-    border-radius: 10px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
-   
-}
-
-#plus{
-    display: flex;
-    width: 65%;
-    background-color:#F2F2F2;
-    height: 800px;
-    padding: 30px;
-    border-radius: 10px;
-    justify-content:space-around;
-    flex-wrap: wrap;
-}
-
-.activite{
-    width: 100%;
-    height: 600px;
-    padding: 50px;
-}
-
-#act{
-    width: 100%;
-    height:100%;
-    background-color: #F2F2F2;
-    border-radius: 10px;
-    padding: 30px;
-    display: flex;
-    justify-content: space-around;
-   
+    #recherche{
     
+        width: 100%;
+        height: 300px;
+        padding: 30px;
+    
+        
+    }
+
+    .barre{
+        position: relative;
+        left: 5px;
+    }
+    
+    .search{
+        width: 10px;
+        height: 30px;
+        background-color: #0065FC;
+        padding:  6px;
+        text-decoration: none;
+        color: white;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        display: none;
+    }
+
+
+    .fa-search{
+        position: absolute;
+        left: 280px;
+        top: 225px;
+        background-color: #0065FC;
+        padding: 0 10px 15px 10px;
+        border-radius: 20px;
+    }
+    
+    .bouton{
+        height: 30px;
+    }
+
+    #heberge{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        flex-direction: column-reverse;
+        position: relative;
+    }
+    
+    .images{
+        width: 100%;
+        height: 150px;
+        border-radius: 10px;
+        left: 5px;
+        top: 50%;
+        transition: .3s ease-in-out; 
+    }
+    
+    .photo{
+        position: absolute;
+        margin: 2px;
+        width: 100px;
+        height: 100px;
+        
+      
+    }
+    
+    .popu{
+        width: 100px;
+        height: 100px; 
+        border-radius: 20px;
+      
+    }
+    
+    .hotel{
+        position: relative;
+        width:300px; 
+        height:250px;
+        background-color: white;
+        border-radius: 20px;
+        top: 10px;
+        margin-bottom: 15px;
+        box-shadow: inset gray;
+        box-shadow: 8px 8px 10px 0 rgba(0,0,0,0.5);
+        -webkit-transition: all 0.2s;
+         -moz-transition: all 0.2s;
+         -ms-transition: all 0.2s;
+         -o-transition: all 0.2s;
+         transition: all 0.2s;
+        
+       
+    }
+    
+    .hotel:hover{
+        transform:scale(1.1);
+    
+    }
+    
+    .hotel1{
+        position: relative;
+        float: left;
+        width: 80%;
+        background-color: white;
+        height: 150px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        box-shadow: 8px 8px 10px 0 rgba(0,0,0,0.5);
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s;
+        
+    }
+    
+    .hotel1:hover{
+        transform:scale(1.1);
+    
+    }
+    
+    .photo{
+        position: absolute;
+        left: 5%;
+        top: 2%;
+       
+    }
+    
+    .coment{
+        position:absolute;
+        left: 50%;
+        top: 10px;
+    }
+    
+    
+    .fa-star.blue{
+    
+        color: #0065FC;
+    }
+    
+    #aside{
+    
+        background-color:#F2F2F2 ;
+        width: 100%;
+        border-radius: 10px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+       
+    }
+    
+    #plus{
+        display: flex;
+        width: 80%;
+        background-color:#F2F2F2;
+        height: 800px;
+        border-radius: 10px;
+        justify-content:space-around;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 600px;
+    }
+
+
+    .activite{
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 600px;
+        top: 2000px;
+    }
+    
+    #act{
+        width: 100%;
+        height:100%;
+        background-color: #F2F2F2;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 10px;
+       
+        
+    }
+    
+    .imag{
+        width: 100%;
+        margin-right: 10px;
+        padding: 10px;
+       
+    }
+    
+    
+    
+    .image1{
+        width: 80%;
+        height: 200px;
+       border-top-left-radius: 20px;
+       border-top-right-radius: 20px;
+    }
+    
+    .image2{
+        width: 80%;
+        height: 200px;
+        border-radius: 20px;
+    }
+    
+    
+    
+    footer{
+        display: flex;
+        position: relative;
+        background-color:#F2F2F2;
+        width: 100%;
+        height: 400px;
+        top: 2300px;
+        justify-content: space-around;
+        flex-direction: column;
+    
+    }
+    
+    .foot{
+        position: absolute;
+    }
+    
+    footer a{
+        text-decoration: none;
+        color: black;
+    
+    }
+
+    
+    
+
+
 }
 
-.imag{
-    width: 20%;
-    margin-right: 10px;
-   
-}
 
-
-
-.image1{
-    width: 100%;
-    height: 100%;
-   border-top-left-radius: 20px;
-   border-top-right-radius: 20px;
-}
-
-.image2{
-    width: 100%;
-    height: 50%;
-    border-radius: 20px;
-}
-
-
-
-footer{
-    display: flex;
-    position: relative;
-    background-color:#F2F2F2;
-    width: 100%;
-    height: 150px;
-    top: 50px;
-    justify-content: space-around;
-    align-items: center;
-
-}
-
-.foot{
-    position: absolute;
-}
-
-footer a{
-    text-decoration: none;
-    color: black;
-
-}
