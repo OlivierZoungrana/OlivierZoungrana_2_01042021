@@ -3,41 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
     <title>Acceuil</title>
 </head>
 <body>
 
+    <!-- Header -->
     <header>
         <div>
             <img class="logo" src="./images/Reservia@3x.png" alt="">
         </div>
         <div class="nav">
             <ul>
-                <li><a class="nav1 navigation" href="#">Hébergement</a></li>
-                <li><a class="nav2 navigation" href="#">Activités</a></li>
+                <li><a class="nav1 navigation" href="#heberge">Hébergement</a></li>
+                <li><a class="nav2 navigation" href="#activite">Activités</a></li>
                 <li><a class="nav3" href="#">S'inscrire</a></li>
             </ul>
         </div>
     </header>
+
+    <!-- zone de recherche -->
+
     <section id="recherche">
-        <h3>Trouvez votre Hébergement <br> pour des vacances </h3>
-        <p>en plein coeur de ville</p>
+        <h3>Trouvez votre Hébergement  pour des vacances de rêve </h3><br>
+        <p>en plein coeur de ville ou en pleine nature</p><br>
         <div></div>
         <br>
         <div id="barre">
-            <i class="fas fa-map-marker-alt"></i><input type="text" id="name" name="name" required
-            minlength="4" maxlength="8" size="30"  placeholder="Ville ou code postal" class="bouton"><a href="#"><i class="fas fa-search"></i></a><a class="search" href="">Recherche</a>
+           <div id="icone"><i class="fas fa-map-marker-alt"></i></div><input type="text" id="name" name="name" required
+            minlength="4" maxlength="8" size="30"  placeholder="Ville ou code postal" class="buton"><a href="#"></a> <button id="bouton">recherche</button>
         </div>
     </section>
+    <section class="filtre">
+        <a href="#"><i class="fas fa-money-bill-wave"></i>Economique</a>
+        <a href="#"><i class="fas fa-male"></i>familial</a>
+        <a href="#"><i class="fas fa-heart"></i>romantique</a>
+        <a href="#"><i class="fas fa-dog"></i>animaux autorisés</a>
+        
+    </section>
 
+    <!-- section1 des sites d'hébergement -->
     <section id="heberge">
-        <section id="plus">
-            <article class="hotel">
-                <a class="images" href="#"><img class="images" src="./images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt=""></a><br><br>
+        <h3 id="marseille">Hébergement à Marseille</h3>
+        <!-- zone principale des sites -->
+               <section id="plus">
+
+                <a class="hotel" href="#"><img class="images" src="./images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt=""><br><br>
+                 <div class="commentaire">
                   <h4 class="titre"> Auberge la Cammenbiere</h4>
                   <p> Nuit à partir de <strong>25$</strong></p>
                   <i class="far  blue"></i>
@@ -45,64 +61,79 @@
                   <i class="far fa-star blue"></i>
                   <i class="far fa-star blue"></i>
                   <i class="far fa-star"></i>
-            </article>
-            <article class="hotel">
-                <a class="images" href="#"><img class="images" src="./images/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt=""></a>
-                  <h4> Auberge la Cammenbiere</h4>
+                </div>
+            </a>
+                <a class="hotel"  href="#"><img class="images" src="./images/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
+                <div class="commentaire">
+                <h4> Auberge la Cammenbiere</h4>
                   <p> Nuit à partir de <strong>25$</strong></p>
                   <i class="far  blue"></i>
                   <i class="far fa-star blue"></i>
                   <i class="far fa-star blue"></i>
                   <i class="far fa-star blue"></i>
                   <i class="far fa-star"></i>
-            </article>
-            <article class="hotel">
-                <a class="images" href="#"><img class="images" src="./images/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt=""></a>
-                  <h4> Auberge la Cammenbiere</h4>
+                </div>
+            </a>
+            
+                <a class="hotel" href="#"><img class="images" src="./images/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
+                <div class="commentaire">
+                <h4> Auberge la Cammenbiere</h4>
                   <p> Nuit à partir de <strong>25$</strong></p>
                   <i class="far  blue"></i>
                   <i class="far fa-star blue"></i>
                   <i class="far fa-star blue"></i>
                   <i class="far fa-star blue"></i>
                   <i class="far fa-star"></i>
-            </article>
-            <article class="hotel">
-                <a class="images" href="#"><img class="images" src="./images/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt=""></a>
-                  <h4> Auberge la Cammenbiere</h4>
+                </div> 
+            </a>
+    
+       
+                <a class="hotel" href="#"><img class="images" src="./images/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
+                <div class="commentaire">
+                <h4> Auberge la Cammenbiere</h4>
                   <p> Nuit à partir de <strong>25$</strong></p>
                   <i class="far  blue"></i>
                   <i class="far fa-star blue"></i>
                   <i class="far fa-star blue"></i>
                   <i class="far fa-star blue"></i>
                   <i class="far fa-star"></i>
-
-            </article>
-            <article class="hotel">
-                <a class="images" href="#"><img class="images" src="./images/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt=""></a>
-                  <h4> Auberge la Cammenbiere</h4>
+                </div> 
+            </a>
+          
+                <a class="hotel" href="#"><img class="images" src="./images/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="">
+                <div class="commentaire">
+                <h4> Auberge la Cammenbiere</h4>
                   <p> Nuit à partir de <strong>25$</strong></p>
                   <i class="far  blue"></i>
                   <i class="far fa-star blue"></i>
                   <i class="far fa-star blue"></i>
                   <i class="far fa-star blue"></i>
                   <i class="far fa-star"></i>
-
-            </article>
-            <article class="hotel">
-                <a class="images" href="#"><img class="images" src="./images/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt=""></a>
-                  <h4> Auberge la Cammenbiere</h4>
+                </div> 
+            </a>
+            
+                <a class="hotel" href="#"><img class="images" src="./images/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
+                <div class="commentaire"> 
+                <h4> Auberge la Cammenbiere</h4>
                  <p> Nuit à partir de <strong>25$</strong></p>
                   <i class="far  blue"></i>
                   <i class="far fa-star blue"></i>
                   <i class="far fa-star blue"></i>
                   <i class="far fa-star blue"></i>
                   <i class="far fa-star"></i>
-
-            </article>
+                </div>
+            </a>
+        
         </section>
+        <!-- zone des sites populaires aside -->
         <section id="aside">
-            <article class="hotel1">
-                <a class="photo" href="#"><img class="popu" src="./images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt=""></a>
+            <div id="graph">
+                <h3>Les plus populaires</h3>
+                <i class="fas fa-chart-line"></i>
+            </div>
+            <br>
+            
+                <a class="hotel1" href="#"><img class="popu" src="./images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
                <div class="coment">
                 <h4> Auberge la Cammenbiere</h4>
                   <p> Nuit à partir de <strong>25$</strong></p>
@@ -112,10 +143,8 @@
                   <i class="far fa-star blue"></i>
                   <i class="far fa-star"></i>
                 </div>
-            </article>
-           
-            <article class="hotel1">
-                <a class="photo" href="#"><img class="popu" src="./images/aw-creative-VGs8z60yT2c-unsplash.jpg" alt=""></a>
+            </a>
+                <a class="hotel1" href="#"><img class="popu" src="./images/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
                <div class="coment">
                 <h4>Auberge la Cammenbiere</h4>
                   <p>Nuit à partir de <strong>25$</strong></p>
@@ -125,9 +154,9 @@
                   <i class="far fa-star blue"></i>
                   <i class="far fa-star"></i>
                 </div>
-            </article>
-            <article class="hotel1">
-                <a class="photo" href="#"><img class="popu" src="./images/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt=""></a>
+            </a>
+
+                <a class="hotel1"  href="#"><img class="popu" src="./images/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
                <div class="coment">
                 <h4> Auberge la Cammenbiere</h4>
                   <p> Nuit à partir de <strong>25$</strong></p>
@@ -137,34 +166,33 @@
                   <i class="far fa-star blue"></i>
                   <i class="far fa-star"></i>
                 </div>
-            </article> 
+                </a>
         </section>
     </section>
-    <section class="activite">
+
+    <!-- section2 des activités -->
+    <section id="activite">
         <div id="act">
            <div class="imag">
-              <a href="#"><img class="image1" src="./images/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt=""> Vieux port</a> 
-           </div>
-
-         
-           <div class="imag">
-               <a href="#"><img class="image2" src="./images/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt=""></a>
-             <a href="#"><img class="image2" src="./images/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt=""></a>
+              <a class="acti1" href="#"><img class="image1" src="./images/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt=""></a>
+              <p>Vieux port</p>
            </div>
            <div class="imag">
-               <a href="#"><img class="image1" src="./images/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt=""></a>
+             <a class="acti2" href="#"><img class="image2" src="./images/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt=""></a>
+             <p>Hotel la marina</p>
+             <a class="acti2" href="#"><img class="image2" src="./images/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt=""></a>
+             <p>Hotel la marina</p>
+           </div>
+           <div class="imag">
+               <a class="acti1" href="#"><img class="image1" src="./images/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt=""></a>
            </div>
            <div class="imag">
                <a href="#"><img class="image2" src="./images/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt=""></a>
                <a href="#"><img class="image2" src="./images/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt=""></a>
            </div>
-
-        </div>
-       
-
     </section>
 
-
+<!-- footer -->
 
 <footer id="footer">
     <div>
@@ -178,7 +206,7 @@
         <a href="#">charte qualité</a><br>
         <a href="#">Soumettre votre hotel</a>
     </div>
-    <div class="foot">
+    <div>
         <h4>Assistance</h4><br>
         <a href="#">Centre d'aide</a><br>
         <a href="#">Nous contacter</a>
