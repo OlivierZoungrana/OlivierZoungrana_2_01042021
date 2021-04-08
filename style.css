@@ -173,9 +173,9 @@
     }
 
     #marseille{
-        position: absolute;
+       position: absolute;
+        top: 550px;
         left: 100px;
-        top: 640px;
     }
     
     .images{
