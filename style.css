@@ -120,21 +120,38 @@
 
     .filtre{
         display: flex;
-        padding: 40px;
-        position: relative;
-       
+        align-items: center;
+        padding: 30px;
+        position: absolute;
+        margin-left: 20px;
+        top: 300px;
     }
+
+  
 
     .filtre a{
         width: 200px;
-        margin: 20px;
+        margin-right: 20px;
         padding: 4px;
-        border: 1px solid black;
-        border-radius: 20px;
+        border: 1px solid gainsboro;
         text-decoration: none;
         color: black;
-        text-align: left;
+        border-left: none;
+        height: 40px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        text-align: center;
+      
     }
+
+    #disponible{
+        display: flex;
+        padding: 30px;
+        margin-left: 50px;
+    }
+
+   
+ 
     
     .bouton{
         height: 30px;
@@ -264,32 +281,46 @@
     }
 
     .fa-money-bill-wave{
+       position: relative;
         color: #0065FC;
-        padding: 8px;
-        border-radius: 20px;
         background-color: #F2F2F2;
+        height: 40px;
+        padding: 10px;
+        line-height: 40px;
+        border-radius: 20px;
+        left: 20px;
+       
     }
 
     .fa-male{
+        position: relative;
         color: #0065FC;
         padding: 10px;
-        border-radius: 20px;
         background-color: #F2F2F2;
+        height: 40px;
+        border-radius: 20px;
+        left: 15px;
     }
 
     .fa-heart{
+        position: relative;
         color: #0065FC;
         padding: 10px;
-        border-radius: 20px;
         background-color: #d4dae4;
+        height: 40px;
+        border-radius: 20px;
+        left: 15px;
         
     }
 
     .fa-dog{
+        position: relative;
         color: #0065FC;
         padding: 10px;
-        border-radius: 20px;
         background-color: #F2F2F2;
+        height: 40px;
+        border-radius: 20px;
+        left: 20px;
 
     }
 
