@@ -21,19 +21,24 @@
     .nav ul li{
     
         display: inline-block;
+     
     }
     .nav ul li a{
         color:#0065FC;
         text-decoration: none;
         margin: 30px;
-        padding: 0 0 0 0;
+        padding: 20px;
+        padding-top: 35px;
         font-family: 'Raleway', sans-serif;
+        
     }
     
     .nav ul li a:hover{
     
         color:black;
-    
+        border-top: 2px solid #0065FC;
+        color:black;
+        font-weight: 100;
     }
     
     .logo{
@@ -42,7 +47,7 @@
     }
     /* general  */
     h2,h3,h4,h5,p, a{
-        font-family: 'Raleway', sans-serif;
+       
     
     }
     a{
@@ -53,10 +58,7 @@
         font-size: 25px;
     }
 
-    h4{
-        font-weight:normal;
-    }
-
+   
     /* section recherche */
     #recherche{
     
@@ -155,6 +157,9 @@
     
     .bouton{
         height: 30px;
+    }
+    #bouton2{
+        display: none;
     }
 
     #graph{
@@ -272,6 +277,11 @@
         top: 160px;
 
     }
+
+
+    .fa.search{
+        display: none;
+    }
     
     
     .fa-star.blue{
@@ -356,26 +366,28 @@
     #activite{
         width: 100%;
         height: 100px;
-        padding: 50px;
+        padding: 30px;
     }
     
     #act{
         width: 100%;
         height:600px;
-        background-color: #F2F2F2;
+        background-color:white;
         border-radius: 10px;
-        padding: 50px;
         display: flex;
         justify-content: space-around;
-       
-        
+        margin-top: 10px;
     }
-    
+
+    #activite h3{
+        margin-left: 50px;
+    }
+
+
     .imag{
         width: 20%;
         height: 80%;
         margin-right: 10px;
-       
     }
 
     .acti1{
@@ -384,15 +396,39 @@
         padding-bottom: 40px;
         border-bottom-right-radius: 20px;
         border-bottom-left-radius: 20px;
+        border: 1px solid rgb(238, 232, 232);
+        box-shadow: 8px 8px 10px 0 rgba(0,0,0,0.5);
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s;
     }
 
     .acti2{
         
-        background-color: #d4dae4;
+        background-color: white;
         padding-bottom: 40px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border: 1px solid rgb(238, 232, 232);
+        box-shadow: 8px 8px 10px 0 rgba(0,0,0,0.5);
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s;
         
-
     }
+
+   
+
+
+
+
+
+
+ 
 
     .imag p{
         margin: 10px;
@@ -401,8 +437,8 @@
     
     
     .image1{
-        width: 100%;
-        height: 100%;
+      width: 100%;
+       height: 100%;
        border-top-left-radius: 20px;
        border-top-right-radius: 20px;
     }
@@ -410,9 +446,10 @@
     .image2{
         width: 100%;
         height: 50%;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        margin: 10px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        padding-top: 0;
+       
     }
 
 /* footer */
@@ -423,9 +460,9 @@
         background-color:#F2F2F2;
         width: 100%;
         height: 150px;
-        top: 800px;
+        top: 600px;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         padding: 20px;
     }
     
@@ -473,19 +510,7 @@
         top: 70px;
     }
 
-    .navigation::after{
-    content: "";
-    display: block;
-    width: 0;
-    height: 2px;
-    background-color: #0065FC;
-    margin-top: 3px;
-    transition: all .7s ease;
-    }
-
-    .navigation:hover{
-        text-decoration: underline;
-    }
+  
     .nav ul li{
     
         display: inline-block;
@@ -493,14 +518,20 @@
     .nav ul li a{
         color:#0065FC;
         text-decoration: none;
-        margin: 20px;
-        padding: 0 0 0 0;
+         margin: 0;
+        padding: 20px;
+        padding-bottom: 10px;
+        padding-left: 10px;
         font-family: 'Raleway', sans-serif;
     }
+
     
     .nav ul li a:hover{
     
         color:black;
+        border-bottom: 2px solid #0065FC;
+        color:black;
+        font-weight: 100;
     
     }
     
@@ -523,44 +554,163 @@
     }
 
     #recherche{
-    
+        position: relative;
         width: 100%;
         height: 300px;
         padding: 30px;
+        top: 20px;
     
         
     }
 
-    .barre{
-        position: relative;
-        left: 5px;
+    #barre{
+        display: flex;
+        border: 1px solid black;
+        width: max-content;
+        border-left: 0;
+        border-right: 0;
+        border-top: none;
+        border-bottom: none;
+    
+
+    }
+
+    .buton{
+        border:0;
+        height: 50px;
+        padding: 10px;
+        border-top: 1px solid gainsboro;
+        border-bottom:1px solid gainsboro ;
+    }
+
+    #icone{
+        height: 50px;
+        line-height: 50px;
+        width: 40px;
+        text-align: center;
+        background: #d4dae4;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
     }
     
-    .search{
-        width: 10px;
-        height: 30px;
-        background-color: #0065FC;
-        padding:  6px;
-        text-decoration: none;
-        color: white;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        display: none;
-    }
 
 
     .fa-search{
-        position: absolute;
         left: 280px;
         top: 225px;
         background-color: #0065FC;
         padding: 0 10px 15px 10px;
-        border-radius: 20px;
+        text-align: center;
+        line-height: 50px;
     }
     
-    .bouton{
+    #bouton{
         height: 30px;
+        display: none;
     }
+
+    #bouton2{
+        position: relative;
+        padding: 10px;
+        height: 50px;
+        background: #0065FC;
+        color:white;
+        border: none;
+        border-radius: 20px;
+        right: 15px;
+    }
+
+    .filtre{
+        display: flex;
+        align-items: center;
+        padding: 30px;
+        position: absolute;
+        margin-left: 20px;
+        top: 300px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+  
+
+    .filtre a{
+        width: 200px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        padding: 4px;
+        border: 1px solid gainsboro;
+        text-decoration: none;
+        color: black;
+        border-left: none;
+        height: 40px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        text-align: center;
+      
+    }
+
+    fa-star.blue{
+    
+        color: #0065FC;
+      
+    }
+
+    .fa-money-bill-wave{
+       position: relative;
+        color: #0065FC;
+        background-color: #F2F2F2;
+        height: 40px;
+        padding: 10px;
+        line-height: 40px;
+        border-radius: 20px;
+        left: 20px;
+       
+    }
+
+    .fa-male{
+        position: relative;
+        color: #0065FC;
+        padding: 10px;
+        background-color: #F2F2F2;
+        height: 40px;
+        border-radius: 20px;
+        left: 15px;
+    }
+
+    .fa-heart{
+        position: relative;
+        color: #0065FC;
+        padding: 10px;
+        background-color: #d4dae4;
+        height: 40px;
+        border-radius: 20px;
+        left: 15px;
+        
+    }
+
+    .fa-dog{
+        position: relative;
+        color: #0065FC;
+        padding: 10px;
+        background-color: #F2F2F2;
+        height: 40px;
+        border-radius: 20px;
+        left: 20px;
+
+    }
+
+
+    #disponible{
+        position: relative;
+        display: flex;
+        margin-left: 50px;
+        top: 170px;
+        left: 2px;
+    }
+
+
+
 
     #heberge{
         display: flex;
@@ -568,6 +718,7 @@
         justify-content: space-around;
         flex-direction: column-reverse;
         position: relative;
+        top: 180px;
     }
     
     .images{
