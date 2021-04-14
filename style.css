@@ -971,12 +971,6 @@
         margin-left: 20px; 
     }
 
-
-    .nav{
-        position: absolute;
-        left:  200px;
-    }
-    
     .nav ul li{
     
         display: inline-block;
@@ -1265,7 +1259,7 @@
     }
 
     .fa-money-bill-wave{
-       position: absolute;
+       position: relative;
         color: #0065FC;
         background-color: #F2F2F2;
         height: 40px;
@@ -1277,7 +1271,7 @@
     }
 
     .fa-male{
-        position: absolute;
+        position: relative;
         color: #0065FC;
         padding: 10px;
         background-color: #F2F2F2;
@@ -1287,7 +1281,7 @@
     }
 
     .fa-heart{
-        position: absolute;
+        position: relative;
         color: #0065FC;
         padding: 10px;
         background-color: #d4dae4;
@@ -1298,7 +1292,7 @@
     }
 
     .fa-dog{
-        position: absolute;
+        position: relative;
         color: #0065FC;
         padding: 10px;
         background-color: #F2F2F2;
@@ -1314,7 +1308,7 @@
     #aside{
     
         background-color:#F2F2F2 ;
-        width: 40%;
+        width: 35%;
         border-radius: 10px;
         padding: 10px;
         display: flex;
@@ -1325,9 +1319,9 @@
     
     #plus{
         display: flex;
-        width: 55%;
+        width: 60%;
         background-color:#F2F2F2;
-        height: 850px;
+        height: 600px;
         border-radius: 10px;
         justify-content:space-around;
         flex-wrap: wrap;
@@ -1399,7 +1393,7 @@
         display: flex;
         position: relative;
         background-color:#F2F2F2;
-        width: 100%;
+        width: 1040px;
         height: 150px;
         top: 300px;
         align-items: center;
@@ -1919,6 +1913,10 @@
        
     }
 
+    p{
+        font-size: 12px;
+    }
+
    
     /* section recherche */
     #recherche{
@@ -2033,10 +2031,10 @@
     }
 
     /* section hébergement */
-    
+
     #heberge{
         display: flex;
-        padding: 30px;
+        padding: 10px;
         width: 100%;
         justify-content: space-around;
        
@@ -2044,13 +2042,13 @@
 
     #marseille{
        position: absolute;
-        top: 550px;
-        left: 100px;
+        top: 500px;
+        left: 500px;
     }
     
     .images{
         width: 100%;
-        height: 150px;
+        height: 100px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         left: 5px;
@@ -2076,8 +2074,8 @@
     }
     
     .popu{
-        width: 200px;
-        height: 180px; 
+        width: 130px;
+        height: 150px; 
         margin: 5px;
         border-bottom-left-radius: 20px;
         border-top-left-radius: 20px;
@@ -2086,12 +2084,10 @@
     
     .hotel{
         position: relative;
-        width:350px; 
-        height:250px;
+        width:160px; 
+        height:200px;
         background-color: white;
         border-radius: 20px;
-        top: 10px;
-        margin-bottom: 15px;
         -webkit-transition: all 0.2s;
          -moz-transition: all 0.2s;
          -ms-transition: all 0.2s;
@@ -2108,8 +2104,6 @@
     
     .hotel:hover{
         transform:scale(1.1);
-        cursor: pointer;
-        background-color: #69a2f8;
     
     }
     
@@ -2118,7 +2112,7 @@
         float: left;
         width: 100%;
         background-color: white;
-        height: 200px;
+        height: 160px;
         border-radius: 20px;
         margin-bottom: 20px;
         -webkit-transition: all 0.2s;
@@ -2136,13 +2130,14 @@
     .coment{
         position:absolute;
         left: 50%;
-        top: 50px;
+        top: 10px;
+
     }
 
     .commentaire{
         position:absolute;
         left: 5%;
-        top: 160px;
+        top: 100px;
 
     }
 
@@ -2168,27 +2163,25 @@
         border-radius: 20px;
         left: 20px;
        
-       
     }
 
-    .fa-child{
+    .fa-male{
         position: relative;
         color: #0065FC;
         padding: 10px;
         background-color: #F2F2F2;
         height: 40px;
-        border-radius: 20px;
+        border-radius: 30px;
         left: 15px;
-        line-height: 40px;
     }
 
     .fa-heart{
         position: relative;
         color: #0065FC;
         padding: 10px;
-        background-color:#F2F2F2 ;
+        background-color: #d4dae4;
         height: 40px;
-        border-radius: 20px;
+        border-radius: 30px;
         left: 15px;
         
     }
@@ -2210,9 +2203,9 @@
     #aside{
     
         background-color:#F2F2F2 ;
-        width: 30%;
+        width: 40%;
         border-radius: 10px;
-        padding: 30px;
+        padding: 10px;
         display: flex;
         flex-direction: column;
         align-content: space-around;
@@ -2221,13 +2214,13 @@
     
     #plus{
         display: flex;
-        width: 65%;
+        width: 55%;
         background-color:#F2F2F2;
-        height: 800px;
-        padding: 30px;
+        height: 600px;
         border-radius: 10px;
         justify-content:space-around;
         flex-wrap: wrap;
+
 
     }
 
@@ -2240,18 +2233,17 @@
         padding: 30px;
         justify-content: space-around;
         position: relative;
-        top: 100px;
        
     }
 
     .image1{
-        width: 300px;
-        height: 500px;
+        width: 160px;
+        height: 280px;
     }
 
     .image2{
-        width: 400px;
-        height: 250px;
+        width: 160px;
+        height: 90px;
         margin-bottom: 20px;
     }
 
@@ -2290,6 +2282,7 @@
     top: 1300px;
 }
     
+
 /* footer */
     
     footer{
@@ -2298,7 +2291,7 @@
         background-color:#F2F2F2;
         width: 100%;
         height: 150px;
-        top: 700px;
+        top: 300px;
         align-items: center;
         justify-content: space-around;
         padding: 20px;
@@ -2310,7 +2303,8 @@
     
     }
 
-
+    
+   
 }
 
 
