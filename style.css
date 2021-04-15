@@ -1969,8 +1969,8 @@ h2, h3, h4{
     }
      h2{
         font-weight:700;
-        font-size: 16px;
-        font-size: 30px;
+        font-size: 20px;
+
     }
 
     a{
@@ -2099,7 +2099,7 @@ h2, h3, h4{
         top: 1030px;
         text-decoration: none;
         color:black;
-        left: 380px;
+        left: 500px;
         font-weight: 600;
         
     }
