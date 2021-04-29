@@ -38,8 +38,12 @@ h2, h3, h4{
 
 
 .img p{
-    font-weight: bold;
+    font-weight: 700;
 
+}
+
+.img2 p{
+    font-weight: 700;
 }
 
 
@@ -75,6 +79,13 @@ h2, h3, h4{
     border-top: 2px solid #0065FC;
     color:black;
     font-weight: 100;
+}
+
+
+.nav3{
+    position: relative;
+    right: 110px;
+    color: #0065FC;
 }
 
 .logo{
@@ -191,7 +202,7 @@ p{
 
 
 .filtre a{
-    width: 200px;
+    width: 100%;
     margin-right: 20px;
     padding: 8px;
     padding-left: 30px;
@@ -204,16 +215,18 @@ p{
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     text-align: center;
-    display: block;
-    position: absolute;
+    position: relative;
+    display: inline-block;
     top: 0;
     left: 0;
 }
 
 .filtrage span{
     position: absolute;
-    left: 50px;
+    left: 45px;
     top: 10px;
+    font-size: 13px;
+    font-weight: 700;
 
 }
 
@@ -241,99 +254,92 @@ p{
 
 /* section hébergement */
 
-.logements{
+
+
+.lodging {
     display: flex;
-    width: 100%;
-    height: 500px;
+    align-items: stretch;
+    justify-content: space-between; 
+}
+
+.lodging-list {
+    background-color: #eee;
+    padding: 2em;
+    border-radius: 1em;
+    width: 64%;
+}
+
+.lodging-popular{
+    background-color: #eee;
+    padding: 2em;
+    border-radius: 1em;
+    width: 32%;
+}
+
+.lodging-popular h3 {
+    display: flex;
     justify-content: space-between;
-
 }
 
-.principale{
+.lodging-list-articles {
     display: flex;
-    width: 60%;
-    background-color:#F2F2F2;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    justify-content: space-around;
     flex-wrap: wrap;
-    padding: 20px;
+    justify-content: space-between;
 }
 
-.principale h3{
-    width: 100%;
-}
-
-
-
-
-
-.populaire{
-    width: 38%;
-    background-color:#F2F2F2;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-    
-}.graph{
-    display: flex;
-    justify-content: space-around;
-}
-
-.graph h4{
-    position: relative;
-    left: -30px;
-}
-
-.hotel{
-    position: relative;
+.lodging-list-articles a {
+    border-radius: 10px;
+    width: 30%;
+    height: 190px;
+    margin: 1em 0;
     background-color: white;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-     -o-transition: all 0.2s;
-    transition: all 0.2s;
-    width: 160px;
-    height: 170px;
-    text-decoration: none;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    
 }
 
-
-.texte{
-    margin-left: 10px;
-}
-.imag{
-    width: 100%;
-    height: 100px;
-}
-
-.hotel span{
-    position: relative;
-   font-size: 15px;
-   left: 5px;
+.lodging-list .article-image {
+    display: flex;
+    height: 60%;
+    overflow: hidden;
+    border-radius: 1em 1em 0 0;
+    padding:4px;
    
+}
+
+.lodging-list .article-image img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.lodging-list .article-info {
+    background-color: white;
+    padding: 10px;
+
+}
+
+a{
+    text-decoration: none;
 }
 
 
 
 .hotel1{
+    display: flex;
     background-color: white;
      -webkit-transition: all 0.2s;
       -moz-transition: all 0.2s;
       -ms-transition: all 0.2s;
      -o-transition: all 0.2s;
       transition: all 0.2s;
-      width: 90%;
+      width: 100%;
       height:max-content;
       text-decoration: none;
-      border-bottom-right-radius: 20px;
-      border-bottom-left-radius: 20px;
-     padding: 10px;
-      margin: 8px;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      margin: 3%;
+      padding: 2%;
+      margin-top: 20px;
 }
+
 
 
 
@@ -347,6 +353,7 @@ p{
    float: left;
    margin-right: 15px;
    height: 120px;
+    object-fit: cover;
 }
 
 
@@ -427,31 +434,49 @@ p{
 }
 
 .image1{
-    width: 230px;
+    width: 100%;
     height: 300px;
+    object-fit: cover;
 }
 
 .image2{
-    width: 230px;
+    width: 100%;
     height: 110px;
     margin-bottom: 20px;
+    object-fit: cover;
+
 }
 
 .img{
-    height: max-content;
-    border-radius: 20px;
+    height: 140px;
+    border-radius: 10px;
     padding-bottom: 10px;
     margin-bottom: 15px;
     margin-right: 20px;
 }
 
+.img2{
+    height: 330px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
 .img p{
     margin-left: 5px;
+    position: relative;
+    top: -15px;
+}
+
+.img2 p{
+    margin-left: 10px;
+    position: relative;
+    top: 5px;
 }
 
 .imgdouble{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     
 }
 
@@ -463,8 +488,8 @@ p{
 }
 
 .arrondi{
-border-top-right-radius: 20px;
-border-top-left-radius: 20px;
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
 }
 
 .act{
@@ -506,20 +531,18 @@ footer a{
 }
 
 
-@media screen  and (min-width:468px) and (max-width:768px){
+@media screen  and (max-width:768px){
 
    .container{
       width: 100%;
-      margin-left: 0;
-      margin-right: 0;
-      padding-left: 0;
-      padding-right: 0;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 0;
    }
 
 
    header{
-     
-    display: flex;
+    position: relative;
     width: 100%;
     height: 100px;
     justify-content: space-between;
@@ -528,47 +551,49 @@ footer a{
 }
 
 
-.nav1{
-    position: relative;
-    left: 20px;
-   }
-
-   .nav2{
-       position: absolute;
-       left: 400px;
-   }
 
    .nav3{
-       position: absolute;
-      right: 10px;
-       top: 0;
+       position: relative;
+       left: -30px;
+       top: 15px;
+      
    }
 
-   .navigation{
-       position: absolute;
-       top: 70px;  
-   }
+.nav{
+    position: relative;
+    top: 70px; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid gainsboro;
+    padding-bottom: 20px;
+}
+
+.nav1{
+    width: 50%;
+}
 
 .nav ul li{
 
     display: inline-block;
+    
  
 }
 .nav ul li a{
-    color:#0065FC;
+    color:black;
     text-decoration: none;
     margin: 30px;
     padding: 20px;
     padding-top: 35px;
     font-family: 'Raleway', sans-serif;
-    
+
 }
 
 .nav ul li a:hover{
       
     color:black;
     border-bottom: 2px solid #0065FC;
-    color:black;
+    color:#0065FC;
     font-weight: 100;
     border-top: none;
 }
@@ -759,32 +784,66 @@ h4, p{
 /* section hébergement */
 
 
-.logements{
+
+
+.lodging {
     display: flex;
-    width: 100%;
-    height: 500px;
-    justify-content: space-between;
+    align-items: stretch;
+    justify-content: space-between; 
     flex-direction: column-reverse;
     position: relative;
-
+    top: 200px;
+   
 }
 
-.principale{
-    display: flex;
+.lodging-list {
+    padding: 2em;
+    border-radius: 1em;
     width: 100%;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 20px;
-    flex-direction: column;
-    position: relative;
-    top: 1900px;
     background-color: white;
 }
 
-#marseille{
-    position: relative;
-    margin-bottom: 20px;
-    font-size: 25px;
+.lodging-popular {
+    background-color: #eee;
+    padding: 2em;
+    width: 100%; 
+    margin-bottom: 15px;
+    border-radius: 0;
+}
+
+.lodging-popular h3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lodging-list-articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.lodging-list-articles a {
+    border-radius: 1em;
+    width: 100%;
+    margin: 1em 0;
+    
+}
+
+.lodging-list .article-image {
+    display: flex;
+    height: 60%;
+    overflow: hidden;
+    border-radius: 1em 1em 0 0;
+}
+
+.lodging-list .article-image img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.lodging-list .article-info {
+    /* height: 40%; */
 }
 
 .populaire{
@@ -797,22 +856,6 @@ h4, p{
 
 
 
-.hotel{
-    position: relative;
-    background-color: white;
-     -webkit-transition: all 0.2s;
-      -moz-transition: all 0.2s;
-      -ms-transition: all 0.2s;
-     -o-transition: all 0.2s;
-      transition: all 0.2s;
-      width: 100%;
-      height: 250px;
-      text-decoration: none;
-      border-bottom-right-radius: 20px;
-      border-bottom-left-radius: 20px;
-      margin-bottom: 20px;
-
-}
 
 .Afficher{
     top: 1700px;
@@ -827,12 +870,7 @@ h4, p{
     height: 180px;
 }
 
-.hotel span{
-    position: relative;
-   font-size: 15px;
-   left: 5px;
-   
-}
+
 
 
 
@@ -917,32 +955,49 @@ h4, p{
     padding: 30px;
     justify-content: space-around;
     position: relative;
-    top: 3000px;
+    top: 1000px;
     flex-direction: column;
    
 }
 
 .image1{
     width: 100%;
-    height: 300px;
+    height: 200px;
+    object-fit: cover;
 }
 
 .image2{
     width: 100%;
-    height: 300px;
+    height: 200px;
     margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.image3{
+    width: 100%;
+    height: 300px;
 }
 
 .img{
-    height: max-content;
+    height: 240px;
     border-radius: 20px;
     padding-bottom: 10px;
     margin-bottom: 15px;
 }
 
+
+.img2{
+    height: 240px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+
+}
+
 .img p{
     margin-left: 5px;
 }
+
+
 
 .imgdouble{
     display: flex;
@@ -956,8 +1011,8 @@ h4, p{
 }
 
 .arrondi{
-border-top-right-radius: 20px;
-border-top-left-radius: 20px;
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
 }
 
 .act{
@@ -975,7 +1030,7 @@ footer{
     background-color:#F2F2F2;
     width: 100%;
     height: max-content;
-    top: 4100px;
+    top: 1800px;
     padding: 20px;
 }
 
