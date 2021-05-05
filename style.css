@@ -49,26 +49,31 @@ h2, h3, h4{
 
  /* header */
  header{
+
+     display: grid;
+     grid-template-columns: 1fr 3fr 1fr;
+     grid-template-rows: 1fr;
+     grid-template-areas: "logo menu bouton";
+     height: 100px;
+     position: relative;
+     top: 12px;
      
-    display: flex;
-    width: 100%;
-    height: 100px;
-    justify-content: space-between;
-    align-items: center;
   
 }
 
 .nav ul li{
 
-    display: inline-block;
+  display: inline-block;
  
 }
 .nav ul li a{
+   
     color:black;
     text-decoration: none;
     margin: 30px;
     padding: 38px;
     font-family: 'Raleway', sans-serif;
+   
     
 }
 
@@ -79,16 +84,27 @@ h2, h3, h4{
     font-weight: 100;
 }
 
+.nav{
+    grid-area: menu;
+    padding: 30px;
+}
+
 
 .nav3{
+    grid-area: bouton;
     position: relative;
-    right: 110px;
+    top: 30px;
     color: #0065FC;
+  
 }
 
 .logo{
-
+    grid-area: logo;
     width: 100px;
+    position: relative;
+    top: 10px;
+
+  
 }
 /* general  */
 h2,h3,h4,h5,p, a{
@@ -554,50 +570,50 @@ footer a{
 
 
    header{
-    position: relative;
-    width: 100%;
-    height: 100px;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 20px; 
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "logo empty bouton" 
+    "menu menu menu";
+       
 }
 
 
 
    .nav3{
-       position: relative;
-       left: -30px;
-       top: 15px;
+
+    
+    grid-area: bouton;
+    position: relative;
+    color: #0065FC;
+    top: 20px;
+    right: 0px;
+      
       
    }
 
 .nav{
+
+    grid-area: menu;
     position: relative;
-    top: 70px; 
+    top: 10px; 
     width: 100%;
-    display: flex;
-    justify-content: space-between;
     border-bottom: 2px solid gainsboro;
-    padding-bottom: 20px;
 }
 
-.nav1{
-    width: 50%;
-}
+
 
 .nav ul li{
-
     display: inline-block;
-    
  
 }
 .nav ul li a{
     color:black;
     text-decoration: none;
     margin: 30px;
-    padding: 20px;
-    padding-top: 35px;
     font-family: 'Raleway', sans-serif;
+    
 
 }
 
@@ -608,13 +624,17 @@ footer a{
     color:#0065FC;
     font-weight: 100;
     border-top: none;
+    padding-bottom: 30px;
+   
 }
 
 .logo{
-    position: absolute;
-    width: 100px;
-    top: 40px;
 
+   
+    grid-area: logo;
+    width: 100px;
+    position: relative;
+    margin-left: 10px;
 }
 /* general  */
 h2,h3,h4,h5,p, a{
