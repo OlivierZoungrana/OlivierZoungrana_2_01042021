@@ -87,6 +87,8 @@ h2, h3, h4{
 .nav{
     grid-area: menu;
     padding: 30px;
+    position: relative;
+    left: 50px;
 }
 
 
@@ -201,7 +203,7 @@ p{
     align-items: center;
     padding: 10px;
     position: absolute;
-    top: 300px;
+    top: 250px;
     max-width: auto;
    margin-right: 20px;
 }
@@ -257,8 +259,10 @@ p{
 }
 
 #disponible{
+    position: relative;
     display: flex;
     padding: 30px;
+    top: -80px;
 }
 
 .bouton{
@@ -274,6 +278,8 @@ p{
     display: flex;
     align-items: stretch;
     justify-content: space-between; 
+    position: relative;
+    top: -60px;
 }
 
 .lodging-list {
@@ -442,7 +448,7 @@ a{
     display: flex;
     width: 100%;
     position: relative;
-    top: 100px;
+    top: 10px;
 }
 
 .activites{
@@ -520,10 +526,12 @@ border-top-left-radius: 10px;
 
 #act{
     position: relative;
-    top: 90px;
     font-size: 20px;
 }
 
+#activites h2{
+    display: none;
+}
 /* activities */
 
 
@@ -537,7 +545,7 @@ footer{
     background-color:#F2F2F2;
     width: 100%;
     height: 150px;
-    top: 200px;
+    top: 150px;
 }
 
 footer div.container{
