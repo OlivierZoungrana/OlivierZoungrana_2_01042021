@@ -48,6 +48,8 @@ h2, h3, h4{
 
 
  /* header */
+
+ 
  header{
 
      display: grid;
@@ -87,8 +89,7 @@ h2, h3, h4{
 .nav{
     grid-area: menu;
     padding: 30px;
-    position: relative;
-    left: 50px;
+   
 }
 
 
@@ -108,6 +109,8 @@ h2, h3, h4{
 
   
 }
+
+
 /* general  */
 h2,h3,h4,h5,p, a{
    
@@ -137,7 +140,6 @@ p{
 
     width: 100%;
     height: 300px;
-    max-width: auto;
 
     
 }
@@ -204,7 +206,6 @@ p{
     padding: 10px;
     position: absolute;
     top: 250px;
-    max-width: auto;
    margin-right: 20px;
 }
 
@@ -381,7 +382,6 @@ a{
 
 
 .shadow{
-    box-shadow: inset gray;
     box-shadow: 8px 8px 10px 0 rgba(185, 183, 183, 0.5);
 }
 
@@ -529,7 +529,7 @@ border-top-left-radius: 10px;
     font-size: 20px;
 }
 
-#activites h2{
+#activite h2{
     display: none;
 }
 /* activities */
@@ -550,7 +550,6 @@ footer{
 
 footer div.container{
     display: flex;
-    align-items: top;
     justify-content: space-around;
 
 }
@@ -579,7 +578,7 @@ footer a{
 }
 
 
-@media screen  and (max-width:768px){
+@media screen  and (max-width:767px){
 
    .container{
       width: 100%;
@@ -589,7 +588,7 @@ footer a{
    }
 
 
-   header{
+    header{
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -656,6 +655,8 @@ footer a{
     position: relative;
     margin-left: 10px;
 }
+
+ 
 /* general  */
 h2,h3,h4,h5,p, a{
    
@@ -682,7 +683,6 @@ h4, p{
     width: 100%;
     height: 300px;
     padding: 30px;
-    max-width: auto;
     position: relative;
     top: 100px;
 
@@ -927,7 +927,6 @@ h4, p{
 
 
 .shadow{
-    box-shadow: inset gray;
     box-shadow: 8px 8px 10px 0 rgba(185, 183, 183, 0.5);
 }
 
@@ -1056,9 +1055,13 @@ h4, p{
 
 #act h3{
     position: relative;
-    top: 120px;
-    left: 30px;
+    margin-top: ;
+    margin-left: 30px;
     
+}
+
+#activite h2{
+    display: none;
 }
 
 .arrondi{
@@ -1093,7 +1096,6 @@ footer a{
 
 footer div.container{
     display: flex;
-    align-items: top;
     justify-content: space-around;
     flex-direction: column;
 
@@ -1110,6 +1112,541 @@ footer a{
     width: 100%;
 }
 
+
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+
+    .container{
+        width: 100%;
+          margin-left: 0px;
+          margin-right: 0px;
+          padding: 0;
+     }
+  
+  
+     header{
+  
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "logo empty bouton" 
+      "menu menu menu";
+         
+  }
+  
+  
+  
+     .nav3{
+  
+      
+      grid-area: bouton;
+      position: relative;
+      color: #0065FC;
+      top: 20px;
+      right: 0px;
+        
+        
+     }
+  
+  .nav{
+  
+      grid-area: menu;
+      position: relative;
+      top: 10px; 
+      width: 100%;
+      border-bottom: 2px solid gainsboro;
+  }
+  
+  
+  
+  .nav ul li{
+      display: inline-block;
+   
+  }
+  .nav ul li a{
+      color:black;
+      text-decoration: none;
+      margin: 30px;
+      font-family: 'Raleway', sans-serif;
+      
+  
+  }
+  
+  .nav ul li a:hover{
+        
+      color:black;
+      border-bottom: 2px solid #0065FC;
+      color:#0065FC;
+      font-weight: 100;
+      border-top: none;
+      padding-bottom: 30px;
+     
+  }
+  
+  .logo{
+  
+     
+      grid-area: logo;
+      width: 100px;
+      position: relative;
+      margin-left: 10px;
+  }
+  /* general  */
+  h2,h3,h4,h5,p, a{
+     
+      font-family: 'Raleway', sans-serif;
+  
+  }
+  a{
+      color: black;
+  }
+  
+  h3{
+      font-size: 25px;
+     
+  }
+  
+  h4, p{
+      font-size: 12px;
+  }
+  
+  
+  /* section recherche */
+  #recherche{
+  
+      width: 100%;
+      height: 300px;
+      padding: 30px;
+      position: relative;
+      top: 100px;
+  
+      
+  }
+  
+  #barre{
+      display: flex;
+      border: 1px solid black;
+      width: max-content;
+      border-left: 0;
+      border-right: 0;
+      border-top: none;
+      border-bottom: none;
+  
+  
+  }
+  
+  .buton{
+      border:0;
+      height: 50px;
+      padding: 10px;
+      border-top: 1px solid gainsboro;
+      border-bottom:1px solid gainsboro ;
+  }
+  
+  #icone{
+      height: 50px;
+      line-height: 50px;
+      width: 40px;
+      text-align: center;
+      background: #d4dae4;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+  
+  }
+  
+  .search{
+      width: 10px;
+      height: 30px;
+      background-color: #0065FC;
+      padding:  6px;
+      text-decoration: none;
+      color: white;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+  }
+  
+  #bouton{
+      padding: 10px;
+      height: 50px;
+      background: #0065FC;
+      color:white;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      border: none;
+      display: none;
+      
+  }
+  
+  #bouton2{
+      padding: 10px;
+      height: 50px;
+      background: #0065FC;
+      color:white;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      border: none;
+      display: block;
+  
+  }
+  
+  .filtre{
+      display: flex;
+      padding: 30px;
+      position: absolute;
+      top: 360px;
+      width: 100%;
+     margin-right: 20px;
+     align-items: flex-start;
+     flex-wrap: wrap;
+   
+  }
+  
+  .filtrage{
+      padding: 20px;
+      position: relative;
+      width: 200px;
+      margin-left: 10px;
+      margin-bottom: 20px;
+  }
+  
+  
+  
+  .filtre a{
+      width: 200px;
+      margin-right: 20px;
+      padding: 8px;
+      padding-left: 30px;
+      border: 1px solid gainsboro;
+      text-decoration: none;
+      color: black;
+      border-bottom-left-radius: 20px;
+      border-top-left-radius: 20px;
+      height: 40px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      text-align: center;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+  
+  .filtrage span{
+      position: absolute;
+      left: 50px;
+      top: 10px;
+      
+  }
+  
+  .romantique{
+      width: 100%;
+  }
+  
+  .filtre h4{
+      width: 100%;
+      margin-bottom: 10px;
+  }
+  
+  #disponible{
+      display: flex;
+      padding: 30px;
+      position: relative;
+      top: 200px;
+  }
+  
+  .bouton{
+      height: 30px;
+  }
+  
+  #graph{
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  #graph h4{
+      font-size: 25px;
+  }
+  
+  /* section hébergement */
+  
+  
+  
+  
+  .lodging {
+      display: flex;
+      align-items: stretch;
+      justify-content: space-between; 
+      flex-direction: column-reverse;
+      position: relative;
+      top: 200px;
+     
+  }
+  
+  .lodging-list {
+      padding: 2em;
+      border-radius: 1em;
+      width: 100%;
+      background-color: white;
+  }
+  
+  .lodging-popular {
+      background-color: #eee;
+      padding: 2em;
+      width: 100%; 
+      margin-bottom: 15px;
+      border-radius: 0;
+  }
+  
+  .lodging-popular h3 {
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .lodging-list-articles {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      flex-direction: column;
+  }
+  
+  .lodging-list-articles a {
+      border-radius: 1em;
+      width: 100%;
+      margin: 1em 0;
+      
+  }
+  
+  .lodging-list .article-image {
+      display: flex;
+      height: 60%;
+      overflow: hidden;
+      border-radius: 1em 1em 0 0;
+  }
+  
+  .lodging-list .article-image img {
+      object-fit: cover;
+      width: 100%;
+  }
+  
+  .lodging-list .article-info {
+      /* height: 40%; */
+  }
+  
+  .populaire{
+      width: 100%;
+      background-color:#F2F2F2;
+      position: relative;
+      top: 1900px;
+      border-radius: 0;
+  }
+  
+  
+  
+  
+  .Afficher{
+      top: 1700px;
+  }
+  
+  .Afficher a{
+      font-size: 20px;
+  }
+  
+  .imag{
+      width: 100%;
+      height: 180px;
+  }
+  
+  
+  
+  
+  
+  .shadow{
+      box-shadow: 8px 8px 10px 0 rgba(185, 183, 183, 0.5);
+  }
+  
+  
+  
+  
+  .fa.search{
+      display: none;
+  }
+  
+  
+  .fa-star.blue{
+  
+      color: #0065FC;
+    
+  }
+  
+  .fa-money-bill-wave{
+     position: absolute;
+      color: #0065FC;
+      background-color:  rgba(0, 101, 252,0.2);
+      height: 40px;
+      padding: 10px;
+      line-height: 40px;
+      border-radius: 20px;
+      left: 0;
+      top: 0;
+     
+  }
+  
+  .fa-child{
+      position: absolute;
+      color: #0065FC;
+      padding: 10px;
+      background-color:  rgba(0, 101, 252,0.2);
+      height: 40px;
+      border-radius: 30px;
+      left: 0;
+      top: 0;
+  }
+  
+  .fa-heart{
+      position: absolute;
+      color: #0065FC;
+      padding: 10px;
+      background-color:  rgba(0, 101, 252,0.2);
+      height: 40px;
+      border-radius: 30px;
+      left: 0;
+      top: 0;
+      
+  }
+  
+  .fa-dog{
+      position: absolute;
+      color: #0065FC;
+      padding: 10px;
+      background-color:  rgba(0, 101, 252,0.2);
+      height: 40px;
+      border-radius: 20px;
+      left: 0;
+      top: 0;
+  
+  }
+  
+  
+  /* aside  */
+  
+  
+  
+  /* section des activités */
+  
+  #activite{
+      display: flex;
+      width: 100%;
+      height: 100px;
+      padding: 30px;
+      justify-content: space-around;
+      position: relative;
+      top: 900px;
+      flex-direction: column;
+     
+  }
+  
+  .image1{
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+  }
+  
+  .image2{
+      width: 100%;
+      height: 200px;
+      margin-bottom: 20px;
+      object-fit: cover;
+  }
+  
+  .image3{
+      width: 100%;
+      height: 300px;
+  }
+  
+  .picture{
+      height: 240px;
+      border-radius: 20px;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+  }
+  
+  
+  .img2{
+      height: 240px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+  
+  }
+  
+  .img p{
+      margin-left: 5px;
+  }
+  
+  
+  .activites{
+      width: 100%;
+  }
+  
+  #act h3{
+      position: relative;
+      top: 120px;
+      left: 30px;
+      
+  }
+  
+  #activite h2{
+      display: none;
+  }
+  
+  .arrondi{
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  }
+  
+  .act{
+  padding: 30px;
+  margin-left: 50px;
+  position: absolute;
+  left: 40px;
+  }
+  
+  
+  /* footer */
+  
+  footer{
+      position: relative;
+      background-color:#F2F2F2;
+      width: 100%;
+      height: max-content;
+      top: 1600px;
+      padding: 20px;
+  }
+  
+  footer a{
+      text-decoration: none;
+      color: black;
+  
+  }
+  
+  footer div.container{
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+  
+  }
+  
+  footer a{
+      text-decoration: none;
+      color: black;
+  }
+  
+  .footer-section {
+      padding-top: 2em;
+      padding-bottom: 2em;
+      width: 100%;
+  }
+  
 
 }
 
