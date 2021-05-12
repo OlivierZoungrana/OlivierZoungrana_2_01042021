@@ -356,7 +356,6 @@ a{
       text-decoration: none;
       border-bottom-right-radius: 10px;
       border-bottom-left-radius: 10px;
-      margin: 3%;
       padding: 2%;
       margin-top: 20px;
 }
@@ -616,9 +615,10 @@ footer a{
 
     grid-area: menu;
     position: relative;
-    top: 10px; 
     width: 100%;
     border-bottom: 2px solid gainsboro;
+    padding: 18px;
+    margin-top: 10px;
 }
 
 
@@ -685,9 +685,7 @@ h4, p{
     height: 300px;
     padding: 30px;
     position: relative;
-    top: 100px;
-
-    
+    margin-top: 10px;
 }
 
 #barre{
@@ -758,15 +756,13 @@ h4, p{
 
 .filtre{
     display: flex;
-    padding: 30px;
-    position: absolute;
-    top: 360px;
     width: 100%;
-   margin-right: 20px;
    align-items: flex-start;
    flex-wrap: wrap;
+   margin-top: 40px;
  
 }
+
 
 .filtrage{
     padding: 20px;
@@ -778,8 +774,11 @@ h4, p{
 
 
 
+
+
+
 .filtre a{
-    width: 200px;
+  width: 180px;
     margin-right: 20px;
     padding: 8px;
     padding-left: 30px;
@@ -818,7 +817,8 @@ h4, p{
     display: flex;
     padding: 30px;
     position: relative;
-    top: 200px;
+    top: 110px;
+   
 }
 
 .bouton{
@@ -845,7 +845,7 @@ h4, p{
     justify-content: space-between; 
     flex-direction: column-reverse;
     position: relative;
-    top: 200px;
+    top: 90px;
    
 }
 
@@ -902,9 +902,8 @@ h4, p{
 .populaire{
     width: 100%;
     background-color:#F2F2F2;
-    position: relative;
-    top: 1900px;
     border-radius: 0;
+    top: 0;
 }
 
 
@@ -1007,8 +1006,8 @@ h4, p{
     padding: 30px;
     justify-content: space-around;
     position: relative;
-    top: 900px;
     flex-direction: column;
+    margin-top: 750px;
    
 }
 
@@ -1084,8 +1083,8 @@ footer{
     background-color:#F2F2F2;
     width: 100%;
     height: max-content;
-    top: 1600px;
     padding: 20px;
+    margin-top: 600px;
 }
 
 footer a{
@@ -1145,6 +1144,7 @@ footer a{
       position: relative;
       color: #0065FC;
       top: 20px;
+      margin-left: 100px;
         
      }
   
@@ -1152,27 +1152,19 @@ footer a{
   
       grid-area: menu;
       position: relative;
-      top: 10px; 
       width: 100%;
       border-bottom: 2px solid gainsboro;
+      padding: 18px;
+      
   }
-  
-  
-  
+
   .nav ul li{
-      display: inline-block;
-      
-   
+      margin-left: 100px;
   }
-  .nav ul li a{
-      color:black;
-      text-decoration: none;
-      margin: 30px;
-      font-family: 'Raleway', sans-serif;
-      width: 50%;
-      
   
-  }
+  
+  
+
   
   .nav ul li a:hover{
         
@@ -1220,7 +1212,6 @@ footer a{
       height: 300px;
       padding: 30px;
       position: relative;
-      top: 100px;
   
       
   }
@@ -1295,7 +1286,6 @@ footer a{
       display: flex;
       padding: 30px;
       position: absolute;
-      top: 360px;
       width: 100%;
      margin-right: 20px;
      align-items: flex-start;
@@ -1353,7 +1343,7 @@ footer a{
       display: flex;
       padding: 30px;
       position: relative;
-      top: 200px;
+      top: 50px;
   }
   
   .bouton{
@@ -1371,8 +1361,7 @@ footer a{
   
   /* section hébergement */
   
-  
-  
+
   
   .lodging {
       display: flex;
@@ -1380,7 +1369,7 @@ footer a{
       justify-content: space-between; 
       flex-direction: column-reverse;
       position: relative;
-      top: 200px;
+        top: 50px;
      
   }
   
@@ -1433,17 +1422,6 @@ footer a{
   .lodging-list .article-info {
       /* height: 40%; */
   }
-  
-  .populaire{
-      width: 100%;
-      background-color:#F2F2F2;
-      position: relative;
-      top: 1900px;
-      border-radius: 0;
-  }
-  
-  
-  
   
   .Afficher{
       top: 1700px;
@@ -1542,8 +1520,8 @@ footer a{
       padding: 30px;
       justify-content: space-around;
       position: relative;
-      top: 900px;
       flex-direction: column;
+      margin-top: 800px;
      
   }
   
@@ -1620,8 +1598,8 @@ footer a{
       background-color:#F2F2F2;
       width: 100%;
       height: max-content;
-      top: 1600px;
       padding: 20px;
+      margin-top: 600px;
   }
   
   footer a{
