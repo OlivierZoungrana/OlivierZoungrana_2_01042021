@@ -632,6 +632,7 @@ footer a{
     text-decoration: none;
     margin: 30px;
     font-family: 'Raleway', sans-serif;
+    padding: 0;
     
 
 }
@@ -1055,7 +1056,6 @@ h4, p{
 
 #act h3{
     position: relative;
-    margin-top: ;
     margin-left: 30px;
     
 }
@@ -1134,7 +1134,8 @@ footer a{
       "menu menu menu";
          
   }
-  
+
+ 
   
   
      .nav3{
@@ -1144,8 +1145,6 @@ footer a{
       position: relative;
       color: #0065FC;
       top: 20px;
-      right: 0px;
-        
         
      }
   
@@ -1162,6 +1161,7 @@ footer a{
   
   .nav ul li{
       display: inline-block;
+      
    
   }
   .nav ul li a{
@@ -1169,6 +1169,7 @@ footer a{
       text-decoration: none;
       margin: 30px;
       font-family: 'Raleway', sans-serif;
+      width: 50%;
       
   
   }
