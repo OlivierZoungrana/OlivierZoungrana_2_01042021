@@ -17,15 +17,19 @@
     <div class="container">
 
         <header>
-            <a href="#">
-                <img class="logo" src="./images/logo/Reservia@3x.png" alt="">
-            </a>
+            <div class="logo">
+                <a href="#">
+                    <img src="./images/logo/Reservia@3x.png" alt="">
+                </a>
+            </div>
+            
             <div class="nav">
                 <ul>
-                    <li><a class="nav1 navigation" href="#heberge">Hébergement</a></li>
+                    <li><a class="nav1 navigation active" href="#heberge">Hébergement</a></li>
                     <li><a class="nav2 navigation" href="#activite">Activités</a></li>
-                </ul>    
+                </ul>  
             </div> 
+
             <a class="nav3" href="#"><strong> S'inscrire</strong></a>
         </header>
 
@@ -41,8 +45,8 @@
                     href="#"></a><button id="bouton">Recherche</button><button id="bouton2"><i
                         class="fas fa-search"></i></button>
             </div>
-
         </section>
+        
         <section class="filtre">
             <h4>Filtres</h4>
             <div class=" filtrage filtre1">
@@ -85,7 +89,7 @@
                              <i class="fas fa-star blue fa-xs"></i>
                              <i class="fas fa-star blue fa-xs"></i>
                              <i class="fas fa-star blue fa-xs"></i>
-                             <i class="far fa-star fa-xs"></i>
+                             <i class="fas fa-star grey fa-xs"></i>
                             </p>
                         </a>
             
@@ -114,8 +118,8 @@
                              <i class="fas fa-star xs blue fa-xs"></i>
                              <i class="fas fa-star blue fa-xs"></i>
                              <i class="fas fa-star blue fa-xs"></i>
-                             <i class="far fa-star fa-xs"></i>
-                             <i class="far fa-star fa-xs"></i>
+                             <i class="fas fa-star grey fa-xs"></i>
+                             <i class="fas fa-star grey fa-xs"></i>
                             </p>
                         </a>
             
@@ -129,8 +133,8 @@
                              <i class="fas fa-star xs blue fa-xs"></i>
                              <i class="fas fa-star blue fa-xs"></i>
                              <i class="fas fa-star blue fa-xs"></i>
-                             <i class="far fa-star  fa-xs"></i>
-                             <i class="far fa-star fa-xs"></i>
+                             <i class="fas fa-star grey fa-xs"></i>
+                             <i class="fas fa-star grey fa-xs"></i>
                             </p>
                         </a>
             
@@ -145,7 +149,7 @@
                              <i class="fas fa-star blue fa-xs"></i>
                              <i class="fas fa-star blue fa-xs"></i>
                              <i class="fas fa-star blue fa-xs"></i>
-                             <i class="far fa-star fa-xs"></i>
+                             <i class="fas fa-star grey fa-xs"></i>
                             </p>
                         </a>
             
@@ -164,8 +168,9 @@
                             </p>
                         </a>
                         
-                       <h3>Afficher Plus</h3>
                     </div>
+
+                    <a class="showmore" href="#">Afficher Plus</a>
                 </div>
                 <div class="lodging-popular">
                     <h3>
@@ -203,7 +208,7 @@
                     <i class="fas fa-star blue fa-xs"></i>
                     <i class="fas fa-star blue fa-xs"></i>
                     <i class="fas fa-star blue fa-xs"></i>
-                    <i class="fas fa-star blue fa-xs"></i>
+                    <i class="fas fa-star grey fa-xs"></i>
                         </p>
                     
                     </a>
@@ -220,7 +225,7 @@
                     <i class="fas fa-star blue fa-xs"></i>
                     <i class="fas fa-star blue fa-xs"></i>
                     <i class="fas fa-star blue fa-xs"></i>
-                    <i class="fas fa-star blue fa-xs"></i>
+                    <i class="fas fa-star grey fa-xs"></i>
                         </p>
                     
                     </a>
@@ -237,40 +242,42 @@
  
   
   
-      
-        <section id="activite">  
-        
-       <div class=" img2 shadow activites zoom">
-            <a href="#"><img class="image1 arrondi" src="./images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt=""></a>
-            <p class="para-grandeimg">Vieux port</p>
-       </div>
+        <h3 id="titleactivite">Activités à Marseille</h3>
 
-        <div class="imgdouble activites">
-            <div class="picture shadow zoom" id="double">
-              <a href="#"><img class="image2 arrondi" id="image3" src="./images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt=""></a>
-              <p>fort de Pomègue</p>
-            </div>
-            <div class="picture shadow zoom">
-               <a href="#"><img class="image2 arrondi" src="./images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt=""></a>
-               <p>Ile de Frioul</p>
-            </div>
-        </div>
+        <section id="activite">
 
-       <div class="img2 shadow activites zoom">
-            <a href="#"><img class="image1 arrondi" src="./images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt=""></a>
-            <p class="para-grandeimg">Parc National de Calanques</p>
-      </div>
-       <div class="imgdouble activites">
-            <div class="picture shadow zoom">
-            <a href="#"><img class="image2 arrondi" src="./images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt=""></a>
-            <p>Notre Dame de la garde</p>
+            <div class=" img2 shadow activites zoom">
+                <a href="#"><img class="image1 arrondi" src="./images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt=""></a>
+                <p class="para-grandeimg">Vieux port</p>
             </div>
 
-            <div class="picture shadow zoom" id="dubble">
-            <a href="#"><img class="image2 arrondi" id="image6" src="./images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt=""></a>
-            <p>Parc Longchamp</p>
+            <div class="imgdouble activites">
+                <div class="picture shadow zoom" id="double">
+                    <a href="#"><img class="image2 arrondi" id="image3" src="./images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt=""></a>
+                    <p>fort de Pomègue</p>
+                </div>
+                <div class="picture shadow zoom">
+                    <a href="#"><img class="image2 arrondi" src="./images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt=""></a>
+                    <p>Ile de Frioul</p>
+                </div>
             </div>
-       </div>
+
+            <div class="img2 shadow activites zoom">
+                <a href="#"><img class="image1 arrondi" src="./images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt=""></a>
+                <p class="para-grandeimg">Parc National de Calanques</p>
+            </div>
+
+            <div class="imgdouble activites">
+                <div class="picture shadow zoom">
+                    <a href="#"><img class="image2 arrondi" src="./images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt=""></a>
+                    <p>Notre Dame de la garde</p>
+                </div>
+
+                <div class="picture shadow zoom" id="dubble">
+                    <a href="#"><img class="image2 arrondi" id="image6" src="./images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt=""></a>
+                    <p>Parc Longchamp</p>
+                </div>
+            </div>
        </section> 
   
  
@@ -278,23 +285,23 @@
 
     <footer id="footer">
         <div class="container">
-        <div class="footer-section">
-            <h4>A propos</h4><br>
-            <a href="#">Fonctionnement du site</a><br>
-            <a href="#">Condition générales de vente </a><br>
-            <a href="#">Données et confidentialité</a>
+            <div class="footer-section">
+                <h4>A propos</h4><br>
+                <a href="#">Fonctionnement du site</a><br>
+                <a href="#">Condition générales de vente </a><br>
+                <a href="#">Données et confidentialité</a>
+            </div>
+            <div class="footer-section">
+                <h4>Nos hébergements</h4><br>
+                <a href="#">charte qualité</a><br>
+                <a href="#">Soumettre votre hotel</a>
+            </div>
+            <div class="footer-section">
+                <h4>Assistance</h4><br>
+                <a href="#">Centre d'aide</a><br>
+                <a href="#">Nous contacter</a>
+            </div>
         </div>
-        <div class="footer-section">
-            <h4>Nos hébergements</h4><br>
-            <a href="#">charte qualité</a><br>
-            <a href="#">Soumettre votre hotel</a>
-        </div>
-        <div class="footer-section">
-            <h4>Assistance</h4><br>
-            <a href="#">Centre d'aide</a><br>
-            <a href="#">Nous contacter</a>
-        </div>
-    </div>
     </footer>
 </body>
 
