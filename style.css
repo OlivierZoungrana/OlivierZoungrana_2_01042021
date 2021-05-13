@@ -193,7 +193,6 @@ p {
     align-items: center;
     padding: 10px;
     position: relative;
-    top: 250px;
    margin-right: 20px;
 }
 
@@ -250,8 +249,6 @@ p {
 #disponible{
     position: relative;
     display: flex;
-    padding: 30px;
-    top: -80px;
 }
 
 .bouton{
@@ -268,7 +265,6 @@ p {
     align-items: stretch;
     justify-content: space-between; 
     position: relative;
-    top: -60px;
 }
 
 .lodging-list {
@@ -445,7 +441,7 @@ a{
     display: flex;
     width: 100%;
     position: relative;
-    top: 10px;
+    top: 50px;
 }
 
 .activites{
@@ -542,7 +538,6 @@ footer{
     position: relative;
     background-color:#F2F2F2;
     width: 100%;
-    height: 150px;
     top: 150px;
 }
 
@@ -737,11 +732,6 @@ p{
     margin-bottom: 20px;
 }
 
-
-
-
-
-
 .filtre a{
   width: 180px;
     margin-right: 20px;
@@ -782,7 +772,6 @@ p{
     display: flex;
     padding: 30px;
     position: relative;
-    top: 110px;
    
 }
 
@@ -810,7 +799,6 @@ p{
     justify-content: space-between; 
     flex-direction: column-reverse;
     position: relative;
-    top: 90px;
    
 }
 
@@ -965,7 +953,7 @@ p{
 /* section des activités */
 #titleactivite {
     padding-left: 30px;
-    margin-top: 120px;
+    margin-top: 10px;
 }
 
 #activite{
@@ -976,7 +964,7 @@ p{
     justify-content: space-around;
     position: relative;
     flex-direction: column;
-    margin-top: 660px;
+    margin-top: 600px;
    
 }
 
@@ -1282,7 +1270,6 @@ footer a{
       display: flex;
       padding: 30px;
       position: relative;
-      top: 50px;
   }
   
   .bouton{
@@ -1308,7 +1295,6 @@ footer a{
       justify-content: space-between; 
       flex-direction: column-reverse;
       position: relative;
-        top: 50px;
      
   }
   
@@ -1454,7 +1440,7 @@ footer a{
 
   #titleactivite {
       padding-left: 30px;
-      margin-top: 120px;
+      margin-top: 10px;
   }
   
   #activite{
@@ -1465,7 +1451,7 @@ footer a{
       justify-content: space-around;
       position: relative;
       flex-direction: column;
-      margin-top: 660px;
+      margin-top: 600px;
      
   }
   
