@@ -76,11 +76,7 @@ h2, h3, h4{
     border-top: 2px solid #0065FC;
 }
 
-.nav{
-    grid-area: menu;
-    padding: 30px;
-   
-}
+
 
 
 .nav3{
@@ -725,8 +721,10 @@ p{
    align-items: flex-start;
    flex-wrap: wrap;
    margin-top: 40px;
- 
+
 }
+
+
 
 
 .filtrage{
@@ -751,10 +749,10 @@ p{
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     text-align: center;
-    display: block;
     position: absolute;
     top: 0;
     left: 0;
+   
 }
 
 .filtrage span{
@@ -1464,7 +1462,7 @@ footer a{
       justify-content: space-around;
       position: relative;
       flex-direction: column;
-      margin-top: 600px;
+      margin-top: 610px;
      
   }
   
